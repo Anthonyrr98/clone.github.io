@@ -47,7 +47,7 @@ $(function(){
 		myCharts.hideLoading();
 
 		var sanData = [ // 散点数据 (value控制散点大小以及是否在省份地图显示)
-			{name: '散点1', value: 1,url:'https://www.baidu.com/',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'hubei'},
+			{name: '南阳', value: 1,url:'https://www.baidu.com/',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'hubei'},
 			{name: '散点2', value: 1,url:'https://www.baidu.com/',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'sichuan'},
 			{name: '散点3', value: 100,url:'https://www.baidu.com/',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'qinghai'},
 			{name: '散点4', value: 1,url:'https://www.baidu.com/',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'guangxi'},
@@ -56,7 +56,7 @@ $(function(){
 		];
 		
 		var geoCoordMap = { // 散点坐标
-			'散点1': [113.52, 30.179],
+			'南阳': [111.77, 33.64],
 			'散点2': [103.42, 32.279],
 			'散点3': [98.32, 34.379],
 			'散点4': [108.22, 23.479],
@@ -64,7 +64,7 @@ $(function(){
 			'散点6': [113.62, 23.179],
 		};
 		
-		var ceshi = [{name: '广西建工集团1', value: [113.52, 30.179], size: 1, url:'https://www.baidu.com/',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'hubei'},
+		var ceshi = [{name: '老界岭', value: [113.52, 30.179], size: 1, url:'https://www.baidu.com/',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'hubei'},
 			{name: '广西建工集团2', value: [103.42, 32.279], size: 1, url:'https://www.baidu.com/',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'sichuan'},
 			{name: '广西建工集团3', value: [98.32, 34.379], size: 80,url:'https://www.baidu.com/',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'qinghai'},
 			{name: '广西建工集团4', value: [108.22, 23.479], size: 1,url:'https://www.baidu.com/',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'guangxi'},
