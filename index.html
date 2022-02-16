@@ -1,592 +1,118 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="zh" class="no-js">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="True-Love-Bootstrap Wedding Template">
-    <meta name="keyword" content="your keyword goes to here">
-    <meta name="author" content="themexriver">
-    <title>yyf and wjn</title>
-    <link href="images/favicon.png" rel="icon">
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Dancing+Script:700' rel='stylesheet' type='text/css'>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/owl.carousel.css" rel="stylesheet">
-    <link href="css/owl.theme.css" rel="stylesheet">
-    <link href="css/nivo-lightbox.css" rel="stylesheet">
-    <link href="css/nivo-default.css" rel="stylesheet">
-    <link href="css/animate.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/responsive.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <!--<script src="http://maps.googleapis.com/maps/api/js"></script>-->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>基于Canvas和SVG的创意地图路径与页面内容互动特效</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<!--[if IE]>
+		<script src="http://libs.baidu.com/html5shiv/3.7/html5shiv.min.js"></script>
+	<![endif]-->
 </head>
-
 <body>
-    <audio scr ="audios\Michael Ball - I Can't Help Falling In Love With You.mp3" controls="controls"  autoplay="autoplay" loop="loop">
-    </audio>
-    <div class="site-loder">
-        <div class="heart"></div>
-    </div> <!-- end of site-loder -->
+	<div class="main">
+		<header class="codrops-header">
+			
+			<h1 class="header-title"><span class="header-title__main">The Wild Path</span> <span class="header-title__part">An Icelandic Adventure</span> <span class="header-title__sub">An interactive storytelling experiment with Canvas. <br />Photo courtesy of  Dan Rubin .</span></h1>
+		</header>
+		<div class="intro">
+			<blockquote><em>“Twenty years from now you will be more disappointed by the things you didn’t do <br/>than by the ones you did do.”</em><span>Mark Twain</span></blockquote>
+		</div>
+		<div class="container"></div>
+		<div class="text">
+			<section class="js-section" data-zoom-middle="2">
+				<h2><span class="title-up">Reykjavík</span><span class="title-down">The Adventure Begins</span></h2>
+				<p class="text-intro">We caught glimpses of faces at most of the windows peering curiously at us and watching our progress through the town.</p>
+				<p>Much to our surprise, when about two miles outside Reykjavik, we met our fellow-passenger by the Ceres, him with whom we had lunched at Thorshavn on the outward journey. We had left him behind at that port, and he had intended to stay for several weeks at the Faroes and to return thence to England; but having found things rather slow there, he had followed us to Iceland by the next steamer; hence the meeting on the road.</p>
+				<p>We created some sort of sensation as we entered the capital of Iceland. The clocks were striking ten as we clattered down the long main street; it was a time when the populace were at leisure and on the street, and they evinced no little curiosity as we rode by them. They were congregated in small groups, and it was evident to us that we were being discussed—and no wonder, for we were a motley-looking cavalcade! We must have presented a very grotesque appearance, clad as we were in oilskins, and covered with mud from head to foot: it had been raining at intervals on the way, and we had had a rather disagreeable journey. </p>
+				<figure>
+					<img class="js-image" data-pos="0.25" src="img/journey/9.jpg" />
+					<figcaption>All things come to an end, and so did our journey when we reached the end of the main street in Reykjavik</figcaption>
+				</figure>
+				<p>We caught glimpses of faces at most of the windows peering curiously at us and watching our progress through the town. Many of the members of the groups, by the wayside saluted as we passed by—the Icelanders are a polite people, as a rule, and they doff their head-gear in salutation to strangers. So we progressed, being saluted, and acknowledging the salutes. It was a sort of triumphal entry, for the news had been carried forward by one of the guides, who was some little distance ahead with some of the pack-ponies, that we had just crossed the country by way of the uninhabited interior. All things come to an end, and so did our journey when we reached the end of the main street in Reykjavik, for there, at a great wooden building four stories high, we took up our quarters, and the crossing of Iceland was an accomplished fact.</p>
+			</section>
+			<section class="js-section" data-zoom-start="2">
+				<h2><span class="title-up">Reykjanesta</span><span class="title-down">A Helping Hand</span></h2>
+				<p>We were six in all—a semi-scientific party. There was Miss J. A. Hastie, a woman who has travelled much in Europe, Asia, Africa, and America, and who is not unacquainted with our Colonies at the Antipodes, or with the islands of the South Seas. She was specially interested in the botany of the country, in its folklore, and in the people. Then there was Captain W. H. Cope; he had been at sea for the greater part of his life, and had in the course of his journeyings seen much of the world; he was our nautical adviser, and we referred to him in matters connected with the sea. W. Glen, Miss Hastie's cousin, was known as the "handy man" of the party. If anybody was in difficulties, Glen was always on the spot to lend a helping hand. He produced all sorts of things at the right moment. Did any one require a screw-driver, then Glen had it; want a corkscrew, Glen could supply it; a pair of scissors, he produced them—some string, a strap, it was all the same. If a camera struck work, Glen could render the strike ineffective, for he carried two, and could lend one without interfering with his own photographic work. A. W. Hill, of King's College, Cambridge, was our botanist—who describes what he saw. H. H. Thomas, of Balliol, paid special attention to the geological formation of the country that we traversed, and he was frequently to be seen, camera in hand, taking shots at interesting formations—a glaciated lava surface, a volcanic vent, or an immense "erratic" boulder or "perched block," for instance; he also sketched industriously, and sometimes paced the ground compass in hand in order that he might record in his note-book the direction of a line of fissure, or the position of hot springs along that line; or something else of interest to geologists in particular. I was the geographer, whose mission it was to make a map of a small portion of the country traversed, to get a general idea of its conformation, and to note valleys and mountains, ice-fields and snow slopes, lava flows and hot springs, mighty rivers and tiny rivulets.</p>
+				<figure>
+					<img class="js-image" data-pos="0.6" src="img/journey/5.jpg" />
+					<figcaption>I was the geographer, whose mission it was to make a map of a small portion of the country traversed.</figcaption>
+				</figure>
+				<p>Next day rain, fog, and mist prevailed, so there was much whist-playing and smoking below, and much blowing of whistle above. Towards evening we were off the coast of Iceland; the land was not visible, for we were enveloped in fog, but there was no doubt about it, for we could hear that land was not far distant. It may seem strange, but it was a fact, we were really feeling our way along the coast by the aid of the steam-whistle. The land thereabouts rises abruptly from the sea, and the echoes from the sheer faces of rock enabled the officers of the vessel to judge their distance. We went dangerously near to another vessel in the fog, but soon afterwards it cleared off a bit, and there, just abeam on the starboard side, was the other vessel, sufficiently close to be a dangerous neighbour in thick weather. At midnight we were going full speed ahead, but when I awoke at seven in the morning it was to find that our experiences of fog were not at an end, that we were again in a very dense one, and that we were lying-to. After breakfast it lifted sufficiently to allow of a course being shaped for Northfjord, our first port of call in Iceland. Much of the scenery of this fjord was obscured by the thick atmosphere, but occasional glimpses through rifts proved that we were missing many fine scenes that are on view when the conditions are favourable. The first sight of Iceland was obtained at Dalatangi Point, four or five miles to the north of the entrance to Northfjord. In the fog we had gone too far north. Other glimpses on the way were of a corrie near Dalatangi, and the face of the mountains near Mjofifjord. Our stay at Northfjord was of but short duration, and there was no time to go ashore, so the only view we had of the town was obtained from the vessel's deck.</p>
+			</section>
+			<section class="js-section" data-zoom-start="2.5" data-stay="true">
+				<h2><span class="title-up">Krísuvíkurbjarg</span><span class="title-down">New Adventures</span></h2>
+				<p>Ashore one is first struck with the Faroese themselves: they are a fine race, and retain their native politeness and independence of character; they are courteous in the extreme to strangers. Most of the men are fishermen or sailors, and many, through their consequent contact with English-speaking people, can converse in good understandable English. A small trade is done in wool, and we met two of the islanders, fine types of the race, returning from their day's work; they were quite picturesque figures, for, besides being attired in the national costume, they had wound round them a quantity of wool, which in these islands is generally plucked, not shorn, from the sheep's back. The national costume consists of a sort of brewer's cap, having red and blue stripes as a rule, a cloth tunic, a waistcoat, and knee breeches split at the knees, but very rarely buttoned, rough woollen stockings and skin shoes. The fishermen often dispense with tunic and waistcoat, and wear in their place a woollen jersey with long sleeves, that has a strong sheepy smell, having a particular pattern worked in pale blue and red on a white ground. The women I saw wore dresses of white striped cotton stuff, no ordinary head covering, but shawls across the shoulders, which were often pulled over the head, and wooden clogs on the feet.</p>
+				<figure>
+					<div class="js-gallery-content">
+						<img src="img/journey/6.jpg" />
+						<img src="img/journey/4.jpg" />
+						<img src="img/journey/11.jpg" />
+						<img src="img/journey/8.jpg" />
+					</div>
+					<figcaption>An unexpected turn in our journey led us to many impressive places.</figcaption>
+				</figure>
+				<p>We were to have made a start at eleven o'clock the next morning, but fate was against us. At the appointed hour the members of the party were ready and waiting, but guides, ponies, pack and riding saddles, tents, provisions, etc., were not ready, and we could not well start unless they were. Saddles and gear required many repairs—most of them had been hired, and they were not in the best condition. Our manager of affairs was to be seen flitting about settling up accounts, giving directions to the men, inspecting saddles, bridles, girths, and gear, and generally trying to reduce confusion to order. For an hour or more we were amused, but then we began to get impatient. Three of us got hold of a saddle and bridle, and we tried the paces of a few of the ponies. In that way we put in an hour or two that might have proved irksome, for everything was in such a state of confusion and unreadiness, and the space in which the men were working was so confined, that we could render no effective help. Instead of starting at eleven, it was half-past three before we got away—four and a half hours late!</p>
+				<p>I engaged two young Faroese to row me to the vessel, and on arrival enjoined them to await me that they might put me ashore again; when, however, I had changed the films and was ready to return, they were nowhere to be found—the young beggars had gone off with another fare, and had left me to my own devices and to the off chance of a "lift" in another boat. I felt much inclined to make a murderous attack upon the Queen's English, to say nothing of the young Faroese had they come my way while pacing the deck in impotent wrath; but I was obliged to restrain myself, for there was no one with whom I could with justice quarrel, so I suppressed the rising ire, and went in search of somebody who could speak my native language. In the end I found a Faroese with some knowledge of English, and arranged for a passage in a cargo-boat then about to return to the shore. Soon I was being conveyed from the Ceres at the rapid rate—for a very heavily laden cargo-boat, that is—of about a knot an hour. However, I reached the shore in due course, just in time to join our party at lunch at the hotel, where they were being entertained by a fellow-passenger. A merry meal we had, and in the course of it our host joined us in criticising the appointments of the table, but, in spite of a few makeshifts, they were not at all bad, and the meal itself was decidedly good.</p>
+			</section>
+			<section class="js-section" data-zoom-start="1.5">
+				<p>I strolled about, camera in hand, and found that many of the women and girls were quite anxious to be photographed; at one spot I came upon a group of women squatting on the ground; as I approached, several others hastened to join the group, at the same time inviting me to photograph them, which I did. Shortly afterwards my films came to an end, so I made a journey to the Ceres, which was lying at anchor half a mile from the shore, in order to reload the camera.</p>
+				<p>The formation of the basaltic hills was most striking, the many pyramidal shapes impressing us greatly. There were numerous dykes in the mountain side, deep ravines scored perpendicularly in the basaltic formation, where softer intrusive material had been eroded more rapidly than the rock on each side. At the entrance to Kalsofjord (the channel between the islands of Kalso on the west and Bordo and Kuno on the east side) there was a very strong current flowing against us in a southerly direction; a course was therefore steered close in-shore to avoid the full strength of the current in mid-stream. Klaksvig lies in a bay in the island of Bordo, and to reach it a turn has to be made eastward between the islands of Kuno and Bordo. At the entrance to the bay anchor was dropped, and there we remained all night. We were close to the southern end of the island of Kuno, where a very fine specimen of a pyramidal mountain frowned down upon us from the height of nearly 2300 feet—it is a pyramid that might well cause the shade of Cheops, if ever passing that way, to hide his diminished head and fade into oblivion. We witnessed some very fine cloud-effects in the course of the journey to Klaksvig, for the clouds drifting over the high hills often streamed away far to leeward of them.</p>
+				<p>
+					<blockquote><em>Broad, wholesome, charitable views of men and things cannot be acquired by vegetating in one little corner of the earth all of one’s lifetime.</em><span> &mdash; Mark Twain</span></blockquote>
+				</p>
+				<p>On one side of this wall there is a cod-liver oil factory, which we inspected; it was not quite so smelly as are some factories where shark or whale oil is produced—but more of that anon! One of the vats was full of a rich brown liquid, which we were informed was unrefined cod-liver oil. The oil is exported in that state after being run into casks, many of which were strewed on the hillside. A pretty picture was seen near the wharf, where several young women were busily engaged washing cod-fish in a bath under cover of an open shed.</p>
+				<figure>
+					<img class="js-image" data-pos="0.6" src="img/journey/10.jpg" />
+					<figcaption>I was the geographer, whose mission it was to make a map of a small portion of the country traversed.</figcaption>
+				</figure>
+				<p>During the voyage I often wrote my notes somewhere about midnight, and this night, while thus employed in my cabin, my "stable companion" took it into his head that I was preventing him from the proper enjoyment of his slumbers, and growled out something to that effect; so, to avoid raising his wrath, I interrupted the course of the notes and turned in; but it was not to sleep, for I had scarcely laid head upon pillow before certain sounds from the bunk below made it evident that unconsciously he was going to turn the tables upon me, and that, by stertorously enjoying his slumbers, he would prevent me from peacefully enjoying mine. After several ineffectual attempts to stop the snoring, I at last fled to the saloon, far out of range of the noise, and there reposed in peace for the rest of the night.</p>
+			</section>
+			<section class="js-section" data-zoom-start="1.5">
+				<h2><span class="title-up">Hveragerði</span><span class="title-down">Sheer Faces of Rock</span></h2>
+				<p>On the west side, and near to the north end of the fjord, there are some very fine specimens of common basaltic land forms—two grand corries, a fine dyke, some sheer faces of rock, and as we passed by the end of the land an almost sheer precipice which faced west came into view, while standing out at its foot there was a solitary basaltic column. When coming up the fjord the steam-whistle was frequently sounded in order that we might hear the very fine echoes for which it is noted; the interval is a long one, some three or four seconds. At the corries the sound echoed and re-echoed until it finally died away in the heights above.</p>
+				<p>The Icelanders are very hospitable, and travellers are made welcome. Every farmer who can afford it has one or two guest-chambers that are placed at the disposal of any one passing through. On arrival at the farm the traveller is invited to partake of coffee. When this is served in the best room of the house, the farmer and his wife join the new arrivals in a light meal, consisting of excellent coffee, and fancy pastry of equally excellent quality. Some of the Icelandic women are very good pastry-cooks, and the cakes and pastry they produce often equal in quality any that could be procured at a first-class London confectioner's.</p>
+				<p>There were some pretty scenes on the river Draghalsá, an interesting stream having a number of hard and soft dykes cut through by the water that descends in a series of waterfalls to a pool, the overflow from which runs into the lake close by. Both pool and stream afford sport for fishermen, and Miss Hastie and Jón got quite a good basket of trout there. I was less fortunate; but as I did not commence until the others had finished, I concluded that they had caught all the fish in the stream and had left none for me to catch—but I am not a fisherman, so lack of skill may have had something to do with the small success met with.</p>
+				<figure>
+					<img class="js-image" data-pos="0.6" src="img/journey/7.jpg"/>
+					<figcaption>At once the music of the steam-whistle was resumed, and our ears were again tortured by its shrill blasts.</figcaption>
+				</figure>
+				<p>On emerging from the fjord and putting out to sea, we encountered a slight swell from the west, so the vessel rolled a bit; it was really not much, but being the first time during the voyage, it was much disliked by those who were not proof against mal de mer. The clear atmosphere was soon left behind, for we entered another fog bank when only a few miles distant from the land. At once the music of the steam-whistle was resumed, and our ears were again tortured by its shrill blasts.</p>
+				<p>Just below the bridge a very remarkable sight is to be seen. For more than half a mile along the right bank of the river a series of cascades and waterfalls flow into it. The water issues from beneath the lava of which the steep bank is composed, and then flows down its side; it is a very striking proof of the great extent of some of the subterranean rivers. Just above the bridge there is a very fine fall in the Hvitá, known as Barnafoss; though fine, it cannot be compared with Gullfoss in grandeur, and the glory of this part of the river is the series of cascades on its right bank. The spot is supposed to have been named from the drowning of two children near the fall—Barnafoss, the children's waterfall; but the minister at Reykholt declared that the tale is not true, and that the name is more likely to have been corrupted from Bjarni, which is a man's name. It is worthy of note that the birch woods seem to flourish best in the decaying lava in the scoriaceous lava-fields; it also seems to do well in soil produced from liparite, for it grows high up on the east side of the liparite mountain, Tunga.</p>
+			</section>
+			<section class="js-section" data-zoom-start="1.5" data-zoom-middle="1" data-icon="img/plane.svg">
+				<h2><span class="title-up">Gullfoss</span><span class="title-down">Above the Clouds</span></h2>
+				<p>Gullfoss is one of the sights of Iceland. It is a magnificent waterfall on the Hvitá, where the white water of the river cascades over a series of step-like barriers stretching from side to side, and then plunges finally over a ledge of very hard rock into a yawning abyss more than a hundred feet deep, whence it throws up clouds of spray that are carried hither and thither as the wind sweeps first this way and then that; so thick is the spray, that one's clothing soon becomes saturated on incautiously getting into it. </p>
+				<p>Gullfoss is one of the finest waterfalls in Europe, and it is only surpassed in grandeur, if at all, by one or two others in Iceland. We saw the falls at their best, for when we arrived the sun was shining brightly and a rainbow playing over the spray as it rose from the gorge. It is true that the sky clouded over afterwards, and that rain began to fall before we left Gullfoss, but we carried away the impression of the broken waters of the cascade sparkling in the sun, and of the colours of the rainbow playing on the spray over the ravine. The water has carved out a deep gorge in the basalt, and below the falls there are many good specimens of basaltic columns. In the lower part of the gorge there are the picturesque remains of a very fine hard dyke that has a much softer one beside it. These remains are to be seen on both sides of the river, and they have assumed the outline and form of a number of castellated buildings perched high upon prominent peaks.</p>
+				<figure>
+					<img src="img/journey/1.jpg" />
+					<figcaption>Farther on there were many evidences of ice-action: the rounded forms of boulders attracted our attention, as did numerous ice-scratchings on them; some of the outcropping lumps were beautifully rounded.</figcaption>
+				</figure>
+			</section>
+			<section class="js-section" data-zoom-start="1.2">
+				<h2><span class="title-up">Eyjafjallajökull</span><span class="title-down">The Final Destination</span></h2>
+				<p>Miss Hastie might have had an awkward experience at the spring where she elected to perform her ablutions, of whose periodical activity she was at the time unaware. During breakfast, one of the guides informed us that the small geyser Miss Hastie had been using as her hot-water tap had "gone off." Subsequent experience proved such pools untrustworthy for washing of any kind. A number of handkerchiefs left by themselves to soak were found an hour or two later making their way down an escape hole in the basin, and one that had been entirely absorbed by suction was not returned during a subsequent eruption by the dishonest geyser.</p>
+				<p>We erected our tents beside a blue warm-water stream facing the sinter terraces, and as the next day was Sunday, we camped there for two nights. We all took a number of photographs of the terraces and the hot springs, and tried to catch the small geysers when they erupted, as with a few exceptions they did at short intervals; it is true that the eruption was not very violent, and the water was not thrown to a great height, three feet, perhaps, being the maximum.</p>
+				<figure>
+					<img src="img/journey/3.jpg" />
+					<figcaption>I had come to this part of the country intending to make a quick survey of it as we traversed it from end to end.</figcaption>
+				</figure>
+				<p>The next day was devoted to exploring the surrounding neighbourhood, and the different members of the party were struck with different features. Thomas and I set off together. We made for the higher ground, and looked round; we at once saw that we were at the edge of a recent (geologically) lava flow. About four miles distant there stuck up two horns, which we afterwards discovered to be the only prominent remains of the cone of the volcano, Strytur, whence the lava had been ejected. Strytur stands in the middle of the long strip of country lying between, and about equidistant from, the two great ice-fields, Lang Jökull and Hoff Jökull, the area of each of which is roughly about five hundred square miles. </p>
+			</section>
+			<section class="js-section" data-stay="true" data-zoom-start="1.2" >
+				<p>The strip is about fourteen miles wide at its narrowest part (not eight as shown on the existing maps), and extends north and south about twenty-five miles. Strytur is on the divide, or water-parting, between one system of rivers flowing north and another flowing south, and it stands on the highest part of this strip of land. The lava, as it issued from the volcano, flowed north and south down gentle declivities, and spread out east and west almost to the outlying ranges on the margins of the ice-fields. North it extends to just beyond Dufufell, and south almost to Lake Hvitarvatn.</p>
+				<p>
+					<blockquote><em>Take only memories, leave only footprints.</em><span> &mdash; Chief Seattle</span></blockquote>
+				</p>
+			</section>
+			<section class="js-section" data-stay="true" data-zoom-start="0.8"></section>
+		</div>
 
-    <header id="home">
-        <nav class="navbar" id="nav">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-
-                    <a class="navbar-brand" href="index.html">True <i class="fa fa-heart"></i> Love</a>
-                </div>
-                <div id="navbar" class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#ourselves">ourselves</a></li>
-                        <!-- <li><a href="#our story">our story</a></li> -->
-                        <li><a href="#event">our story</a></li>
-                        
-                        <li class="theme-logo hidden-xs">
-                            <a href="index.html">
-                                <img src="image\0.0—198.png" alt="Logo" class="hidden-sm logo-rotating">
-                                <img src="image\0.0-120.png" alt="Logo" class="hidden-md hidden-lg logo-rotating">
-                                <div>
-                                    <div>
-                                        <span>yyf</span>
-                                        <span>wjn</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <!-- <li><a href="#people">People</a></li> -->
-                        <li><a href="#gallery">Gallery</a></li>
-                        <!-- <li><a href="#gift">Gift</a></li> -->
-                        <!-- <li><a href="#rsvp">RSVP</a></li> -->
-                        <li class="dropdown">
-                            <a href="" role="button" aria-haspopup="true" aria-expanded="false">Blog <i class="fa fa-angle-down"></i></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="blog.html">Travel</a></li>
-                                <li><a href="blog-2.html">Event</a></li>
-                                <li><a href="#">message board</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="" role="button" aria-haspopup="true" aria-expanded="false">Pages <i class="fa fa-angle-down"></i></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="coming-soon.html">Coming Soon</a></li>
-                                <li><a href="under-construction.html">Under Construction</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav> <!-- end of nav -->
-
-        <div class="title-bg">
-            <div class="title">
-                <h1>We will be</h1>
-                <h2>together</h2>
-                <p class="date">to change future</p>
-            </div>
-        </div>
-
-        <div class="slider">
-            <div class="slide-item slide-img-1">
-                <div class="overlay"></div>
-            </div>
-
-            <div class="slide-item slide-img-2">
-                <div class="overlay"></div>
-            </div>
-        </div> <!-- end of slider -->
-    </header>  <!-- end of header -->
-
-    <section class="wedding-announcement section-padding" id="ourselves">
-        <div class="heart heart-animation"></div>
-        <div class="container">
-            <div class="row section-heading">
-                <div class="col col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-                    <h2>About ourselves</h2>
-                    <p>1+1>2</p>
-                </div>
-            </div>
-
-            <div class="row content">
-                <div class="col col-sm-6 left-col">
-                    <div class="col col-xs-6 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-                        <div class="frame">
-                            <img src="images/home/announcement/img-frame.png" alt="Frame" class="img img-responsive img-circle">
-                            <img src="image\1.1.jpg" alt="Groom" class="img img-responsive img-circle">
-                        </div>
-                        <h3>yyf</h3>
-                        <h4>准男朋友</h4>
-                        <p>性别：男</p>
-                        <p>姓名：yyf</p>
-                        <a href=https://weibo.com/u/5658823787>yyf's Weibo</a>
-                        <!-- <img src="images/home/announcement/signature-1.png" alt="Signature" class="img img-reponsive signature"> -->
-                    </div>
-                </div>
-                <div class="col col-sm-6 right-col">
-                    <div class="col col-xs-6 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-                        <div class="frame">
-                            <img src="images/home/announcement/img-frame.png" alt="Frame" class="img img-responsive img-circle">
-                            <img src="image\1.0.jpg" alt="Bride" class="img img-responsive img-circle">
-                        </div>
-                        <h3>wjn</h3>
-                        <h4>准女朋友</h4>
-                        <p>性别：女</p>
-                        <p>姓名：wjn</p>
-                        <a href=https://weibo.com/u/6445608143>wjn's Weibo</a>
-                        <!-- <img src="images/home/announcement/signature-2.png" alt="Signature" class="img img-reponsive signature"> -->
-                    </div>
-                </div>
-            </div> <!-- end of content -->
-        </div>  <!-- end of container -->
-    </section> <!-- end of wedding-announcement -->
-
-    <!-- <section class="love-story section-padding" id="our story">
-        <div class="container">
-            <div class="row section-heading">
-                <div class="col col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-                    <h2>Our Love Story</h2>
-                    <p>Curabitur ac lacus arcu. Sed vehicula varius lectus auctor viverra. Nulla vehicula nibh vel ante commodo feugiat.</p>
-                </div>
-            </div>
-
-            <div class="row content">
-                <div class="row">
-                    <div class="col col-xs-12 col-md-10 col-md-offset-1 col-sm-12 col-lg-8 col-lg-offset-2">
-                        <div class="col col-xs-8 col-sm-8">
-                            <h3>14 April 2015</h3>
-                            <h4>We Have Met Each Other</h4>
-                            <p>Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                        </div>
-                        <div class="col col-xs-4 col-sm-4">
-                            <div class="frame">
-                                <img src="images/home/love-story/img-frame-right.png" alt="Frame">
-                                <img src="images/home/love-story/img-1.jpg" alt="Love picture">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row middle-row">
-                    <div class="col col-xs-12 col-md-10 col-md-offset-1 col-sm-12 col-lg-8 col-lg-offset-2 middle">
-                        <div class="col col-xs-4 col-sm-4">
-                            <div class="frame padding-left">
-                                <img src="images/home/love-story/img-frame-left.png" alt="Frame">
-                                <img src="images/home/love-story/img-2.jpg" alt="Love picture">
-                            </div>
-                        </div>
-                        <div class="col col-xs-8 col-sm-8">
-                            <h3>14 April 2015</h3>
-                            <h4>Our First Beautiful Date</h4>
-                            <p>Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col col-xs-12 col-md-10 col-md-offset-1 col-sm-12 col-lg-8 col-lg-offset-2">
-                        <div class="col col-xs-8 col-sm-8">
-                            <h3>14 April 2015</h3>
-                            <h4>We Have Met Each Other</h4>
-                            <p>Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                        </div>
-                        <div class="col col-xs-4 col-sm-4">
-                            <div class="frame">
-                                <img src="images/home/love-story/img-frame-right.png" alt="Frame">
-                                <img src="images/home/love-story/img-3.jpg" alt="Love picture">
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-            <!-- </div> end of content -->
-        <!-- </div> end of container -->
-    <!-- </section> end of love-story  -->
-
-    <!-- <section class="video-bg">
-        <div class="overlay"></div>
-        <h2 class="hidden">Video</h2>
-        <div class="row">
-            <a href="https://www.youtube.com/watch?v=y6PH9u0wnww" class="btn btn-default">
-                <i class="fa fa-play"></i>
-            </a>
-        </div> -->
-    <!-- </section> end of video-bg -->
-
-    <section class="event section-padding" id="event">
-        <div class="container">
-            <div class="row section-heading">
-                <div class="col col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-                    <h2>初见</h2>
-                    <p>我们经历多少风风雨雨终于来到彼此面前</p>
-                </div>
-            </div>
-
-            <div class="content">
-                <div class="row" id="first-row">
-                    <div class="col col-md-4">
-                        <div class="event-frame">
-                            <img src="images/home/event/frame.png" alt="Event Frame" class="">
-                            <img src="image\1.0.0.png" alt="Event Picture" class="">
-                        </div>
-                    </div>
-                    <div class="col col-md-8">
-                        <h3>初遇</h3>
-                        <p><span><i class="fa fa-calendar"></i>2021年10月19日,</span> <span><i class="fa fa-clock-o"></i>晚上, </span> <span><i class="fa fa-map-marker"></i>辽宁, 大连，大连理工大学</span></p>
-                        <p>yyf:刚认识是那天晚上报节目的时候，聊了两句觉得这个女生好有趣啊（其实那天晚上我的第六感告诉我感觉这个女生和我...嗯,不好说）</p>
-                        <p>wjn:那天晚上聊天他说我又菜又爱玩，我觉得他是一个渣男</p>
-                        <!-- <a href="#">Read more</a> -->
-                    </div>
-                </div>
-
-                <div class="row middle" id="second-row">
-                    <div class="col col-md-4 hidden-lg hidden-md">
-                        <div class="event-frame">
-                            <img src="images/home/event/frame.png" alt="Event Frame" class="">
-                            <img src="image\1.0.0.png" alt="Event Picture" class="">
-                        </div>
-                    </div>
-                    <div class="col col-md-8">
-                        <h3>见面</h3>
-                        <p><span><i class="fa fa-calendar"></i>2021年10月30日</span> <span><i class="fa fa-clock-o"></i>晚上, </span> <span><i class="fa fa-map-marker"></i>辽宁，大连，高新万达广场</span></p>
-                        <p>yyf:我只能说其实在所有人中他给我的感觉很好</p>
-                        <p>wjn:我觉得他很“奇特”，是一个“奇特”的人</p>
-                        <!-- <a href="#">Read more</a> -->
-                    </div>
-                    <div class="col col-md-4 hidden-sm hidden-xs">
-                        <div class="event-frame">
-                            <img src="images/home/event/frame.png" alt="Event Frame" class="">
-                            <img src="image\15(1).jpg" alt="Event Picture" class="">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row" id="last-row">
-                    <div class="col col-md-4">
-                        <div class="event-frame">
-                            <img src="images/home/event/frame.png" alt="Event Frame" class="">
-                            <img src="image\WPS图片拼图.png" alt="Event Picture" class="">
-                        </div>
-                    </div>
-                    <div class="col col-md-8">
-                        <h3>升温</h3>
-                        <p><span><i class="fa fa-calendar"></i>2021年12月</span> <span><i class="fa fa-clock-o"></i>每天, </span> <span><i class="fa fa-map-marker"></i>辽宁，大连</span></p>
-                        <p>现在来看期末考试复习周真的好好啊，我们之间有着更多的接触时间去了解彼此。</p>
-                        <p>yyf:我当时觉得她真的不错哎，几乎上符合我对未来妻子的所有设定啊</p>
-                        <p>wjn:当时在复习矩阵的时候觉得这个人好蠢好好玩，身上有很多闪光点</p>
-                        <!-- <a href="#">Read more</a> -->
-                    </div>
-                </div>
-            </div> <!-- end of content -->
-        </div> <!-- end of container -->
-    </section> <!-- end of event--> 
-
-    <section class="gallery section-padding" id="gallery">
-        <div class="container">
-            <div class="row section-heading">
-                <div class="col col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-                    <h2>照片墙</h2>
-                    <p>未来会有很有很多照片哦！</p>
-                </div>
-            </div> 
-        </div> 
-
-         <div class="row content">
-            <ul id="filter">
-                <li><a href="#" class="active" data-group="all">All</a></li>
-                <li><a href="#" data-group="约会">约会</a></li>
-                <li><a href="#" data-group="准男友视角">准男友视角</a></li>
-                <li><a href="#" data-group="我们和家人们">我们和家人们</a></li>
-                <li><a href="#" data-group="wjn">wjn's自拍</a></li>
-            </ul>
-
-            <div class="row" id="shuffle-wrapper">
-                <div class="col col-xs-6 col-sm-3 item" data-groups='["约会","准男友视角"]'>
-                    <a href="image\6.jpg" data-lightbox-gallery="gallery1">
-                        <div class="overlay"></div>
-                        <img src="image\6.jpg" alt="Gallery image"  class="img img-responsive">
-                    </a>
-                </div>
-                <!-- 1 -->
-                <div class="col col-xs-6 col-sm-3 item" data-groups='["all", "约会","准男友视角"]'>
-                    <a href="image\7.jpg" data-lightbox-gallery="gallery1">
-                        <div class="overlay"></div>
-                        <img src="image\7.jpg" alt="Gallery image" class="img img-responsive">
-                    </a>
-                </div>
-                <!-- 2 -->
-                <div class="col col-xs-6 col-sm-3 item" data-groups='["all", "约会","准男友视角"]'>
-                    <a href="image\13.jpg" data-lightbox-gallery="gallery1">
-                        <div class="overlay"></div>
-                        <img src="image\13.jpg" alt="Gallery image" class="img img-responsive">
-                    </a>
-                </div>
-                <!-- 3 -->
-                <div class="col col-xs-6 col-sm-3 item" data-groups='["all",  "准男友视角"]'>
-                    <a href="image\5.jpg" data-lightbox-gallery="gallery1">
-                        <div class="overlay"></div>
-                        <img src="image\5.jpg" alt="Gallery image" class="img img-responsive">
-                    </a>
-                </div>
-                <!-- 4 -->
-                <div class="col col-xs-6 col-sm-3 item" data-groups='["all",  "准男友视角"]'>
-                    <a href="image\4.jpg" data-lightbox-gallery="gallery1">
-                        <div class="overlay"></div>
-                        <img src="image\4.jpg" alt="Gallery image" class="img img-responsive">
-                    </a>
-                </div>
-                <!-- 5 -->
-                <div class="col col-xs-6 col-sm-3 item" data-groups='["all", "准男友视角"]'>
-                    <a href="image\8.jpg" data-lightbox-gallery="gallery1">
-                        <div class="overlay"></div>
-                        <img src="image\8.jpg" alt="Gallery image" class="img img-responsive">
-                    </a>
-                </div>
-                <!-- 6 -->
-                <div class="col col-xs-6 col-sm-3 item" data-groups='["all", "准男友视角"]'>
-                    <a href="image\10.jpg" data-lightbox-gallery="gallery1">
-                        <div class="overlay"></div>
-                        <img src="image\10.jpg" alt="Gallery image" class="img img-responsive">
-                    </a>
-                </div>
-                <!-- 7 -->
-                <div class="col col-xs-6 col-sm-3 item" data-groups='["我们和家人们"]'>
-                    <a href="image\last.jpg" data-lightbox-gallery="gallery1">
-                        <div class="overlay"></div>
-                        <img src="image\last.jpg" alt="Gallery image" class="img img-responsive">
-                    </a>
-                </div>
-                <!-- 8 -->
-                <div class="col col-xs-6 col-sm-3 item" data-groups='["all", "我们和家人们"]'>
-                    <a href="image\2.jpg" data-lightbox-gallery="gallery1">
-                        <div class="overlay"></div>
-                        <img src="image\2.jpg " alt="Gallery image" class="img img-responsive">
-                    </a>
-                </div>
-                <!-- 9 -->
-                <div class="col col-xs-6 col-sm-3 item" data-groups='["我们和家人们"]'>
-                    <a href="image\9.jpg" data-lightbox-gallery="gallery1">
-                        <div class="overlay"></div>
-                        <img src="image\9.jpg " alt="Gallery image" class="img img-responsive">
-                    </a>
-                </div>
-                <!-- 10 -->
-                <div class="col col-xs-6 col-sm-3 item" data-groups='["wjn" ]' >
-                    <a href="image\16.jpg" data-lightbox-gallery="gallery1">
-                        <div class="overlay"></div>
-                        <img src="image\16.jpg "alt="Gallery image" class="img img-responsive" >
-                    </a>
-                </div>
-                <!-- 11-->
-                <div class="col col-xs-6 col-sm-3 item" data-groups='["wjn"]' >
-                    <a href="image\18.jpg" data-lightbox-gallery="gallery1">
-                        <div class="overlay"></div>
-                        <img src="image\18.jpg " alt="Gallery image" class="img img-responsive">
-                    </a>
-                </div>
-                <!-- 12 -->
-            </div> 
-        </div> 
-    </section> 
-
-    <!-- <section class="groomsmen-bridesmaids section-padding" id="people">
-        <div class="container">
-            <div class="row section-heading">
-                <div class="col col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-                    <h2>Groomsmen &amp; Bridesmaids</h2>
-                    <p>Curabitur ac lacus arcu. Sed vehicula varius lectus auctor viverra. Nulla vehicula nibh vel ante commodo feugiat.</p>
-                </div>
-            </div>
-        </div> end of container
-
-        <div class="row content">
-            <div class="container">
-                <div class="col col-xs-6 col-sm-3">
-                    <div class="frame">
-                        <a href="#">
-                            <img src="images/home/groomsmen-bridesmaids/img-frame.png" alt="Frame" class="img img-responsive hidden-xs">
-                            <img src="images/home/groomsmen-bridesmaids/img-frame-sm.png" alt="Frame" class="img img-responsive hidden-lg hidden-md hidden-sm show-xs">
-                            <img src="images/home/groomsmen-bridesmaids/img-1.jpg" alt="Image" class="img img-responsive">
-                        </a>
-                        <div class="overlay">
-                            <div><span>Grooms</span></div>
-                        </div>
-                    </div>
-                    <h3>Edward Prince</h3>
-                    <span>Brother</span>
-                </div>
-                <div class="col col-xs-6 col-sm-3">
-                    <div class="frame">
-                        <a href="#">
-                            <img src="images/home/groomsmen-bridesmaids/img-frame.png" alt="Frame" class="img img-responsive hidden-xs">
-                            <img src="images/home/groomsmen-bridesmaids/img-frame-sm.png" alt="Frame" class="img img-responsive hidden-lg hidden-md hidden-sm show-xs">
-                            <img src="images/home/groomsmen-bridesmaids/img-2.jpg" alt="Image" class="img img-responsive">
-                        </a>
-                        <div class="overlay">
-                            <div><span>Grooms</span></div>
-                        </div>
-                    </div>
-                    <h3>Darien Hari</h3>
-                    <span>Friend</span>
-                </div>
-                <div class="col col-xs-6 col-sm-3">
-                    <div class="frame">
-                        <a href="#">
-                            <img src="images/home/groomsmen-bridesmaids/img-frame.png" alt="Frame" class="img img-responsive hidden-xs">
-                            <img src="images/home/groomsmen-bridesmaids/img-frame-sm.png" alt="Frame" class="img img-responsive hidden-lg hidden-md hidden-sm show-xs">
-                            <img src="images/home/groomsmen-bridesmaids/img-3.jpg" alt="Image" class="img img-responsive">
-                        </a>
-                        <div class="overlay">
-                            <div><span>Bridesmaids</span></div>
-                        </div>
-                    </div>
-                    <h3>Alice</h3>
-                    <span>Friend</span>
-                </div>
-                <div class="col col-xs-6 col-sm-3">
-                    <div class="frame">
-                        <a href="#">
-                            <img src="images/home/groomsmen-bridesmaids/img-frame.png" alt="Frame" class="img img-responsive hidden-xs">
-                            <img src="images/home/groomsmen-bridesmaids/img-frame-sm.png" alt="Frame" class="img img-responsive hidden-lg hidden-md hidden-sm show-xs">
-                            <img src="images/home/groomsmen-bridesmaids/img-4.jpg" alt="Image" class="img img-responsive">
-                        </a>
-                        <div class="overlay">
-                            <div><span>Bridesmaids</span></div>
-                        </div>
-                    </div>
-                    <h3>Alice Lues</h3>
-                    <span>Sister</span>
-                </div>
-            </div>
-        </div> end of content
-    </section> end of groomsmen-bridesmaids  -->
-
-    <!-- <section class="gift-registration section-padding" id="gift">
-        <div class="container">
-            <div class="row section-heading">
-                <div class="col col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-                    <h2>Gift Registration</h2>
-                    <p>Curabitur ac lacus arcu. Sed vehicula varius lectus auctor viverra. Nulla vehicula nibh vel ante commodo feugiat.</p>
-                </div>
-            </div>
-
-            <div class="row content gift-slider">
-                <div class="item">
-                    <img src="images/home/gift/img-1.png" alt="Gift Registry" class="img img-responsive">                
-                </div>
-                <div class="item">
-                    <img src="images/home/gift/img-2.png" alt="Gift Registry" class="img img-responsive">                
-                </div>
-                <div class="item">
-                    <img src="images/home/gift/img-3.png" alt="Gift Registry" class="img img-responsive">                
-                </div>
-                <div class="item">
-                    <img src="images/home/gift/img-1.png" alt="Gift Registry" class="img img-responsive">                
-                </div>
-                <div class="item">
-                    <img src="images/home/gift/img-2.png" alt="Gift Registry" class="img img-responsive">                
-                </div>
-                <div class="item">
-                    <img src="images/home/gift/img-3.png" alt="Gift Registry" class="img img-responsive">                
-                </div>
-                <div class="item">
-                    <img src="images/home/gift/img-1.png" alt="Gift Registry" class="img img-responsive">                
-                </div> -->
-            <!-- </div> end of content -->
-        <!-- </div> end of container -->
-    <!-- </section> end of gift-registration  -->
-
-    <!-- <section class="rsvp section-padding" id="rsvp">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row section-heading">
-                <div class="col col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-                    <h2>Submit Your Rsvp</h2>
-                    <p>Curabitur ac lacus arcu. Sed vehicula varius lectus auctor viverra. Nulla vehicula nibh vel ante commodo feugiat.</p>
-                </div>
-            </div>
-
-            <div class="row content">
-                <div class="from-wrapper col col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-                    <form class="form-inline">
-                        <div class="form-group col col-sm-6">
-                            <label class="sr-only" for="name">Your Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group col col-sm-6">
-                            <label class="sr-only" for="email">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="Email" required>
-                        </div>
-                        <div class="form-group col col-sm-6">
-                            <label class="sr-only" for="guste">Number of Guste</label>
-                            <input type="text" class="form-control" id="guste" placeholder="Number of Guste" required>
-                        </div>
-                        <div class="form-group col col-sm-6">
-                            <select class="form-control">
-                                <option disabled selected>Meal Choice</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                            </select>
-                        </div>
-                        <div class="form-group col col-sm-12">
-                            <textarea id="message" placeholder="Notes" required></textarea>
-                        </div>
-                        <div class="form-group submit col-sm-12">
-                            <input class="btn btn-default" type="submit" value="Submit">
-                        </div>
-                    </form>
-                </div> -->
-            <!-- </div> end of content -->
-        <!-- </div> end of container -->
-    <!-- </section> end of rsvp  -->
-
-
-    <footer>
-        <div class="row">
-            <h2>yyf&amp; wjn </h2>
-            <span class="date">你好哇，王嘉宁</span>
-        </div>
-
-        <div class="row">
-            <div class="container">
-                <div class="col col-sm-6">
-                    <p>Copyright &copy; 2021 themexriver. All Rights Reserved</p>
-                </div>
-                <div class="col col-sm-6">
-                    <ul>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="https://twitter.com/NapolRefrain"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="https://www.instagram.com/marnapol/"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer> <!-- end of footer -->
-
-    <script src="js/jquery-1.11.3.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.appear.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.shuffle.min.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/nivo-lightbox.min.js"></script>
-    <script src="js/common-script.js"></script>
-    <script src="js/index-script.js"></script>
-
+	</div>
+	<!-- /main -->
+	
+	<script src="dist/app.js"></script>
 </body>
 </html>
