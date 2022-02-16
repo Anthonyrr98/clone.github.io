@@ -47,13 +47,13 @@ $(function(){
 		myCharts.hideLoading();
 
 		var sanData = [ // 散点数据 (value控制散点大小以及是否在省份地图显示)
-			{name: '老界岭', value: 1,url:'#',symbol: 'image://img/point.png',img:'image://img/pic/1.jpg',areaname:'henan'},
-			{name: '南阳',   value: 100,symbol: 'image://img/point.png',img:'img/pic/1.jpg',areaname:'henan'},
-			{name: '开封',   value: 1,symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'henan'},
-			{name: '西安',  value: 100,symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'shanxi1'},
-			{name: '云台山', value: 1,symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'henan'},
-			{name: '贵阳',  value: 100,symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'guizhou'},
-			{name: '华山',  value: 1,symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'shanxi1'}
+			{name: '老界岭', value: 1,url:'http://www.zrldyn.com/gallery.html',symbol: 'image://img/point.png',img:'img/pic/1.png',areaname:'henan'},
+			{name: '南阳', value: 100,url:'http://www.zrldyn.com/gallery.html',symbol: 'image://img/point.png',img:'img/pic/1.png',areaname:'henan'},
+			{name: '开封', value: 1,url:'http://www.zrldyn.com/gallery.html',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'henan'},
+			{name: '西安', value: 100,url:'http://www.zrldyn.com/gallery.html',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'shanxi1'},
+			{name: '云台山', value: 1,url:'http://www.zrldyn.com/gallery.html',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'henan'},
+			{name: '贵阳', value: 100,url:'http://www.zrldyn.com/gallery.html',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'guizhou'},
+			{name: '华山', value: 1,url:'http://www.zrldyn.com/gallery.html',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'shanxi1'}
 		];
 		
 		var geoCoordMap = { // 散点坐标
@@ -67,13 +67,13 @@ $(function(){
 		};
 		
 		var ceshi = [
-			{name: '老界岭', value: [111.77, 33.64], size: 1,url:'3',symbol: 'image://img/point.png',img:'image://img/pic/1.jpg',areaname:'henan'},
-			{name: '南阳', value: [112.53, 33.00], size: 80, symbol: 'image://img/point.png',img:'img/pic/1.jpg',areaname:'henan'},
-			{name: '开封', value: [114.34, 34.78], size: 1, symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'henan'},
-			{name: '西安', value: [108.93, 34.23], size: 80,symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'shanxi1'},
-			{name: '云台山', value: [113.23, 35.24], size: 1,symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'henan'},
-			{name: '贵阳', value: [106.62, 26.67], size: 100,symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'guizhou'},
-			{name: '华山', value: [110.09, 34.56], size: 1,symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'shanxi1'},
+			{name: '老界岭', value: [111.77, 33.64], size: 1, url:'http://www.zrldyn.com/gallery.html',symbol: 'image://img/point.png',img:'img/pic/1.png',areaname:'henan'},
+			{name: '南阳', value: [112.53, 33.00], size: 80, url:'http://www.zrldyn.com/gallery.html',symbol: 'image://img/point.png',img:'img/pic/1.png',areaname:'henan'},
+			{name: '开封', value: [114.34, 34.78], size: 1, url:'http://www.zrldyn.com/gallery.html',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'henan'},
+			{name: '西安', value: [108.93, 34.23], size: 80,url:'http://www.zrldyn.com/gallery.html',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'shanxi1'},
+			{name: '云台山', value: [113.23, 35.24], size: 1,url:'http://www.zrldyn.com/gallery.html',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'henan'},
+			{name: '贵阳', value: [106.62, 26.67], size: 100,url:'http://www.zrldyn.com/gallery.html',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'guizhou'},
+			{name: '华山', value: [110.09, 34.56], size: 1,url:'http://www.zrldyn.com/gallery.html',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'shanxi1'},
 			
 		];
 		
