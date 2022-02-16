@@ -50,31 +50,31 @@ $(function(){
 			{name: '老界岭', value: 1,url:'http://www.zrldyn.com/gallery.html',symbol: 'image://img/point.png',img:'img/pic/1.jpg',areaname:'henan'},
 			{name: '南阳', value: 100,url:'http://www.zrldyn.com/gallery.html',symbol: 'image://img/point.png',img:'img/pic/1.jpg',areaname:'henan'},
 			{name: '开封', value: 1,url:'https://www.baidu.com/',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'henan'},
-			{name: '散点3', value: 100,url:'https://www.baidu.com/',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'qinghai'},
-			{name: '散点4', value: 1,url:'https://www.baidu.com/',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'guangxi'},
-			{name: '散点5', value: 100,url:'https://www.baidu.com/',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'hebei'},
-			{name: '散点6', value: 1,url:'https://www.baidu.com/',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'guangdong'}
+			{name: '西安', value: 100,url:'https://www.baidu.com/',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'shanxi1'},
+			{name: '云台山', value: 1,url:'https://www.baidu.com/',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'henan'},
+			{name: '贵阳', value: 100,url:'https://www.baidu.com/',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'guizhou'},
+			{name: '华山', value: 1,url:'https://www.baidu.com/',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'shanxi1'}
 		];
 		
 		var geoCoordMap = { // 散点坐标
 			'老界岭': [111.77, 33.64],
 			'南阳': [112.53,  33.00],
 			'开封': [103.42, 32.279],
-			'散点3': [98.32, 34.379],
-			'散点4': [108.22, 23.479],
-			'散点5': [118.12, 40.579],
-			'散点6': [113.62, 23.179],
+			'西安': [108.93, 34.23],
+			'云台山': [113.23, 35.24],
+			'贵阳': [106.62, 26.67],
+			'华山': [110.09, 34.56],
 		};
 		
 		var ceshi = [
 			{name: '老界岭', value: [111.77, 33.64], size: 1, url:'http://www.zrldyn.com/gallery.html',symbol: 'image://img/point.png',img:'img/pic/1.jpg',areaname:'henan'},
 			{name: '南阳', value: [112.53, 33.00], size: 80, url:'http://www.zrldyn.com/gallery.html',symbol: 'image://img/point.png',img:'img/pic/1.jpg',areaname:'henan'},
-			{name: '开封', value: [103.42, 32.279], size: 1, url:'https://www.baidu.com/',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'sichuan'},
-			{name: '广西建工集团3', value: [98.32, 34.379], size: 80,url:'https://www.baidu.com/',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'qinghai'},
-			{name: '广西建工集团4', value: [108.22, 23.479], size: 1,url:'https://www.baidu.com/',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'guangxi'},
-			{name: '广西建工集团5', value: [118.12, 40.579], size: 100,url:'https://www.baidu.com/',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'hebei'},
-			{name: '广西建工集团6', value: [113.62, 23.179], size: 1,url:'https://www.baidu.com/',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'guangdong'},
-			{name: '广西建工集团7', value: [114.62, 23.179], size: 100,url:'https://www.baidu.com/',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'guangdong'}
+			{name: '开封', value: [114.34, 34.78], size: 1, url:'https://www.baidu.com/',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'henan'},
+			{name: '西安', value: [108.93, 34.23], size: 80,url:'https://www.baidu.com/',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'shanxi1'},
+			{name: '云台山', value: [113.23, 35.24], size: 1,url:'https://www.baidu.com/',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'henan'},
+			{name: '贵阳', value: [106.62, 26.67], size: 100,url:'https://www.baidu.com/',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'guizhou'},
+			{name: '华山', value: [110.09, 34.56], size: 1,url:'https://www.baidu.com/',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'shanxi1'},
+			
 		];
 		
 		var convertData = function (data) { // 处理数据函数
