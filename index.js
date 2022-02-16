@@ -47,7 +47,7 @@ $(function(){
 		myCharts.hideLoading();
 
 		var sanData = [ // 散点数据 (value控制散点大小以及是否在省份地图显示)
-			{name: '老界岭', value: 1,symbol: 'image://img/point.png',img:'image://img/pic/1.jpg',areaname:'henan'},
+			{name: '老界岭', value: 1,url:'#',symbol: 'image://img/point.png',img:'image://img/pic/1.jpg',areaname:'henan'},
 			{name: '南阳',   value: 100,symbol: 'image://img/point.png',img:'img/pic/1.jpg',areaname:'henan'},
 			{name: '开封',   value: 1,symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'henan'},
 			{name: '西安',  value: 100,symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'shanxi1'},
@@ -67,7 +67,7 @@ $(function(){
 		};
 		
 		var ceshi = [
-			{name: '老界岭', value: [111.77, 33.64], size: 1,symbol: 'image://img/point.png',img:'image://img/pic/1.jpg',areaname:'henan'},
+			{name: '老界岭', value: [111.77, 33.64], size: 1,url:'3',symbol: 'image://img/point.png',img:'image://img/pic/1.jpg',areaname:'henan'},
 			{name: '南阳', value: [112.53, 33.00], size: 80, symbol: 'image://img/point.png',img:'img/pic/1.jpg',areaname:'henan'},
 			{name: '开封', value: [114.34, 34.78], size: 1, symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'henan'},
 			{name: '西安', value: [108.93, 34.23], size: 80,symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'shanxi1'},
