@@ -47,7 +47,7 @@ $(function(){
 		myCharts.hideLoading();
 
 		var sanData = [ // 散点数据 (value控制散点大小以及是否在省份地图显示)
-			{name: '南阳', value: 1,url:'http://www.zrldyn.com/gallery.html',symbol: 'image://img/point.png',img:'img/pic/1.jpg',areaname:'henan'},
+			{name: '老界岭', value: 1,url:'http://www.zrldyn.com/gallery.html',symbol: 'image://img/point.png',img:'img/pic/1.jpg',areaname:'henan'},
 			{name: '南阳', value: 100,url:'http://www.zrldyn.com/gallery.html',symbol: 'image://img/point.png',img:'img/pic/1.jpg',areaname:'henan'},
 			{name: '开封', value: 1,url:'https://www.baidu.com/',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'henan'},
 			{name: '散点3', value: 100,url:'https://www.baidu.com/',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'qinghai'},
@@ -57,7 +57,8 @@ $(function(){
 		];
 		
 		var geoCoordMap = { // 散点坐标
-			'南阳': [111.77, 33.64],
+			'老界岭': [111.77, 33.64],
+			'南阳': [112.53,  33.00],
 			'开封': [103.42, 32.279],
 			'散点3': [98.32, 34.379],
 			'散点4': [108.22, 23.479],
@@ -66,8 +67,8 @@ $(function(){
 		};
 		
 		var ceshi = [
-			{name: '老界岭', value: [111.77, 33.64], size: 80, url:'http://www.zrldyn.com/gallery.html',symbol: 'image://img/point.png',img:'img/pic/1.jpg',areaname:'henan'},
-			{name: '南阳', value: [111.77, 33.64], size: 80, url:'http://www.zrldyn.com/gallery.html',symbol: 'image://img/point.png',img:'img/pic/1.jpg',areaname:'henan'},
+			{name: '老界岭', value: [111.77, 33.64], size: 1, url:'http://www.zrldyn.com/gallery.html',symbol: 'image://img/point.png',img:'img/pic/1.jpg',areaname:'henan'},
+			{name: '南阳', value: [112.53, 33.00], size: 80, url:'http://www.zrldyn.com/gallery.html',symbol: 'image://img/point.png',img:'img/pic/1.jpg',areaname:'henan'},
 			{name: '开封', value: [103.42, 32.279], size: 1, url:'https://www.baidu.com/',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'sichuan'},
 			{name: '广西建工集团3', value: [98.32, 34.379], size: 80,url:'https://www.baidu.com/',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'qinghai'},
 			{name: '广西建工集团4', value: [108.22, 23.479], size: 1,url:'https://www.baidu.com/',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'guangxi'},
