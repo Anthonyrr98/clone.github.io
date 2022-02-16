@@ -47,8 +47,9 @@ $(function(){
 		myCharts.hideLoading();
 
 		var sanData = [ // 散点数据 (value控制散点大小以及是否在省份地图显示)
-			{name: '南阳', value: 100,url:'https://www.baidu.com/',symbol: 'image://img/point.png',img:'img/pic/1.jpg',areaname:'henan'},
-			{name: '散点2', value: 1,url:'https://www.baidu.com/',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'sichuan'},
+			{name: '南阳', value: 1,url:'http://www.zrldyn.com/gallery.html',symbol: 'image://img/point.png',img:'img/pic/1.jpg',areaname:'henan'},
+			{name: '南阳', value: 100,url:'http://www.zrldyn.com/gallery.html',symbol: 'image://img/point.png',img:'img/pic/1.jpg',areaname:'henan'},
+			{name: '开封', value: 1,url:'https://www.baidu.com/',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'henan'},
 			{name: '散点3', value: 100,url:'https://www.baidu.com/',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'qinghai'},
 			{name: '散点4', value: 1,url:'https://www.baidu.com/',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'guangxi'},
 			{name: '散点5', value: 100,url:'https://www.baidu.com/',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'hebei'},
@@ -57,15 +58,17 @@ $(function(){
 		
 		var geoCoordMap = { // 散点坐标
 			'南阳': [111.77, 33.64],
-			'散点2': [103.42, 32.279],
+			'开封': [103.42, 32.279],
 			'散点3': [98.32, 34.379],
 			'散点4': [108.22, 23.479],
 			'散点5': [118.12, 40.579],
 			'散点6': [113.62, 23.179],
 		};
 		
-		var ceshi = [{name: '老界岭', value: [111.77, 33.64], size: 80, url:'https://www.baidu.com/',symbol: 'image://img/point.png',img:'img/pic/1.jpg',areaname:'henan'},
-			{name: '广西建工集团2', value: [103.42, 32.279], size: 1, url:'https://www.baidu.com/',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'sichuan'},
+		var ceshi = [
+			{name: '老界岭', value: [111.77, 33.64], size: 80, url:'http://www.zrldyn.com/gallery.html',symbol: 'image://img/point.png',img:'img/pic/1.jpg',areaname:'henan'},
+			{name: '南阳', value: [111.77, 33.64], size: 80, url:'http://www.zrldyn.com/gallery.html',symbol: 'image://img/point.png',img:'img/pic/1.jpg',areaname:'henan'},
+			{name: '开封', value: [103.42, 32.279], size: 1, url:'https://www.baidu.com/',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'sichuan'},
 			{name: '广西建工集团3', value: [98.32, 34.379], size: 80,url:'https://www.baidu.com/',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'qinghai'},
 			{name: '广西建工集团4', value: [108.22, 23.479], size: 1,url:'https://www.baidu.com/',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'guangxi'},
 			{name: '广西建工集团5', value: [118.12, 40.579], size: 100,url:'https://www.baidu.com/',symbol: 'image://img/point.png',img:'img/demo.jpg',areaname:'hebei'},
